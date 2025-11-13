@@ -6,3 +6,11 @@ document.querySelectorAll("form").forEach(form => {
     form.reset();
   });
 });
+
+// Menú móvil
+const menuToggle = document.getElementById('menu-toggle');
+const navbar = document.querySelector('.navbar');
+
+menuToggle.addEventListener('click', () => {
+  navbar.classList.toggle('active');
+});
