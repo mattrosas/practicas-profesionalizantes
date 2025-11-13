@@ -410,3 +410,102 @@ footer {
   width: 28px;
   height: 28px;
 }
+
+/* ====== 📱 Estilos para tablets y celulares ====== */
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 992px) {
+
+  .navbar {
+    flex-wrap: wrap;
+    padding: 15px 30px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .service-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .testimonial-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gallery-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-contact img {
+    width: 100%;
+    height: auto;
+  }
+
+  .form-box {
+    width: 90%;
+  }
+}
+
+/* Celulares (pantallas pequeñas) */
+@media (max-width: 600px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+
+  .navbar.active ul {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.8em;
+  }
+
+  .service-items {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-items {
+    grid-template-columns: 1fr;
+  }
+
+  .form-box {
+    width: 100%;
+    margin: 20px auto;
+  }
+}
